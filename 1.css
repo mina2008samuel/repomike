@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+.hero {
+    background: url('images/angel.jpg') no-repeat center center/cover;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-title {
+    font-size: 5rem;
+    color: white;
+    mix-blend-mode: overlay;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 4rem 2rem;
+    flex-wrap: wrap;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.text-content {
+    max-width: 500px;
+}
+
+.text-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.text-content .highlight {
+    color: #e91e63;
+}
+
+.text-content p {
+    margin-bottom: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background-color: #ff4d58;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.image-content img {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.hero-bottom {
+    background: url('images/raptis.png') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-around;
+    background: #f2546d;
+    color: white;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+.footer-columns div {
+    margin: 1rem;
+}
+
+.footer-note {
+    text-align: center;
+    background: #d43c57;
+    padding: 1rem;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-content img {
+        margin-top: 2rem;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .footer-columns {
+        flex-direction: column;
+        align-items: center;
+    }
+}
